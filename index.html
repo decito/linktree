@@ -2,105 +2,16 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  <link rel="icon" href="/favicon.ico" />
   <title>Decito's Links</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="public/scripts/clickHandler.js"></script>
 </head>
 
-<body class="flex flex-col items-center justify-between h-screen max-w-3xl mx-auto px-6  bg-gray-900">
-  <header class="flex items-center justify-between w-full py-10">
-    <button class="flex items-center justify-center w-16 h-16 p-4 rounded-full bg-gray-100" onclick="copyToClipboard()">
-      <!-- <i class="fas fa-up-right-from-square"></i> -->
-      <i id="clipboard-icon" class="fas fa-link"></i>
-    </button>
-
-    <a href="https://github.com/decito/linktree" target="_blank"
-      class="flex items-center justify-center gap-4 h-16 p-4 rounded-full bg-gray-100">
-      <i class="fab fa-github fa-xl"></i>
-
-      <p class="text-xl font-semibold">Code preview</p>
-    </a>
-  </header>
-
-  <section class="flex flex-col gap-10 w-full">
-    <img src="https://pbs.twimg.com/profile_images/1646649791206531073/xkCHm52T_400x400.jpg"
-      class="w-36 h-36 rounded-full mx-auto">
-
-    <header class="text-center text-gray-100">
-      <h1 class="text-2xl font-bold">
-        Decito
-      </h1>
-
-      <h2 class="text-base font-normal">@decito_app</h2>
-    </header>
-
-    <main class="flex flex-col gap-4 w-full md:w-4/6 mx-auto text-gray-100">
-      <a href="https://twitch.tv/decito" target="_blank"
-        class="flex items-center gap-6 border border-gray-500 rounded py-4 px-6 bg-gray-700 transition-colors hover:border-violet-500 hover:bg-violet-700">
-        <i class="fab fa-twitch fa-2x"></i>
-        <div>
-          <h3 class="text-lg font-semibold">Twitch</h3>
-
-          <p>@decito</p>
-        </div>
-      </a>
-
-      <a href="https://twitter.com/decito_app" target="_blank"
-        class="flex items-center gap-6 border border-gray-500 rounded py-4 px-6 bg-gray-700 transition-colors hover:border-sky-300 hover:bg-sky-500">
-        <i class="fab fa-twitter fa-2x"></i>
-        <div>
-          <h3 class="text-lg font-semibold">Twitter</h3>
-
-          <p claass="break-words">@decito_app</p>
-        </div>
-      </a>
-
-      <a href="https://instagram.com/decito_app" target="_blank"
-        class="flex items-center gap-6 border border-gray-500 rounded py-4 px-6 bg-gray-700 transition-colors hover:border-fuchsia-500 hover:bg-gradient-to-r from-fuchsia-700 from-40% via-red-500 via-80% to-yellow-600 to-95%">
-        <i class="fab fa-instagram fa-2x"></i>
-        <div class="break-words">
-          <h3 class="text-lg font-semibold">Instagram</h3>
-
-          <p>@decito_app</p>
-        </div>
-      </a>
-
-      <a href="https://github.com/decito" target="_blank"
-        class="flex items-center gap-6 border border-gray-500 rounded py-4 px-6 bg-gray-700 transition-colors hover:bg-slate-800 hover:bg-slate-950">
-        <i class="fab fa-twitch fa-2x"></i>
-
-        <div>
-          <h3 class="text-lg font-semibold">Github</h3>
-
-          <p>@decito</p>
-        </div>
-      </a>
-    </main>
-  </section>
-
-  <footer class="text-center py-4">
-    <a href="https://linkedin.com/in/desceoneto" target="_blank" class="text-gray-400">
-      <i class="fab fa-linkedin"></i>
-
-      <span class="hover:underline">Contato</span>
-    </a>
-  </footer>
-
-  <section id="clipboard-info"
-    class="hidden absolute w-11/12 sm:w-fit rounded p-4 bottom-0 opacity-100 transition-all overflow-hidden bg-gray-100">
-    <h4 class="font-semibold">
-      Copiado para a área de transferencia!
-    </h4>
-
-    <div id="progression-bar" class="absolute h-0.5 bg-cyan-400 left-0 bottom-0">
-
-    </div>
-  </section>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>

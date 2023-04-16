@@ -1,0 +1,35 @@
+@import './base.css';
+@import './tailwind.css';
+
+#app {
+  @apply mx-auto flex h-screen max-w-3xl flex-col items-center justify-between overflow-y-hidden px-8 pt-4;
+}
+
+header a,
+header button {
+  @apply transition-colors duration-300;
+  color: hsla(160, 100%, 37%, 1);
+}
+
+@media (hover: hover) {
+  header a:hover,
+  header button:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+.card-twitch {
+  @apply hover:border-violet-500 hover:bg-violet-700;
+}
+
+.card-twitter {
+  @apply hover:border-sky-300 hover:bg-sky-500;
+}
+
+.card-instagram {
+  @apply from-fuchsia-700 from-40% via-red-500 via-80% to-yellow-600 to-95% hover:border-fuchsia-500 hover:bg-gradient-to-r;
+}
+
+.card-github {
+  @apply hover:border-slate-800 hover:bg-slate-950;
+}
