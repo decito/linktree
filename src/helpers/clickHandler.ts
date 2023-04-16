@@ -1,17 +1,19 @@
+const stopFlag = ref(false)
+
 export const copyToClipboard = () => {
-  console.log('clicado')
-  // AO usar Vue, verificar animacoes!!!!!!
+  if (stopFlag.value) return
 
   navigator.clipboard.writeText('https://decito-links.web.app')
+
+  stopFlag.value = true
 
   const infoCard = document.querySelector('#clipboard-info')
   const infoIcon = document.querySelector('#clipboard-icon')
 
   if (!infoCard || !infoIcon) return
 
-  infoCard.classList.remove('opacity-0', 'translate-y-full')
-  infoCard.classList.add('-translate-y-10')
-  //animacao abaixo nao funciona ainda
+  infoCard.classList.remove('opacity-0', 'bottom-0', '-z-10')
+  infoCard.classList.add('bottom-20', 'z-10')
 
   toggleClipboardIcon(infoIcon, 'fa-check', 'fa-link')
 
@@ -19,8 +21,6 @@ export const copyToClipboard = () => {
     document.querySelector('#progression-bar')
 
   let width = 100
-
-  // TODO: Verificar se o interval já foi criado ao clicar no botao novamente (spammar) pois ele esta criando varios intervalos. Memory leak
 
   function decreaseWidth() {
     if (!progressionBar) return
@@ -34,10 +34,15 @@ export const copyToClipboard = () => {
 
   const interval = setInterval(decreaseWidth, 60)
 
-  const stopInterval = () => clearInterval(interval)
+  const stopInterval = () => {
+    clearInterval(interval)
+
+    stopFlag.value = false
+  }
 
   setTimeout(() => {
-    infoCard.classList.add('opacity-0', 'translate-y-full')
+    infoCard.classList.remove('bottom-20', 'z-10')
+    infoCard.classList.add('bottom-0', 'opacity-0', '-z-10')
 
     toggleClipboardIcon(infoIcon, 'fa-link', 'fa-check')
   }, 6300)

@@ -8,7 +8,12 @@ import { copyToClipboard } from '@/helpers'
       class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 p-4"
       @click="copyToClipboard"
     >
-      <!-- <i class="fas fa-up-right-from-square"></i> -->
+      <template v-if="false">
+        <!-- TODO: verificar como usar o menu de contexto dos dispositivos -->
+
+        <!-- <i class="fas fa-up-right-from-square"></i> -->
+      </template>
+
       <i id="clipboard-icon" class="fas fa-link"></i>
     </button>
 

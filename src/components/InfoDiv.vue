@@ -1,7 +1,7 @@
 <template>
   <section
     id="clipboard-info"
-    class="absolute bottom-0 w-fit translate-y-full overflow-hidden rounded bg-gray-100 p-4 opacity-0 transition-all"
+    class="fixed bottom-0 -z-10 w-fit overflow-hidden rounded bg-gray-100 p-4 opacity-0 transition-all"
   >
     <h4 class="font-semibold">Copiado para a área de transferencia!</h4>
 
