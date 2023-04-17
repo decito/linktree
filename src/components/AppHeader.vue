@@ -3,7 +3,7 @@ import { copyToClipboard } from '@/helpers'
 </script>
 
 <template>
-  <header class="flex w-full items-center justify-between py-10">
+  <header class="flex w-full items-center justify-between pb-16 pt-6">
     <button
       class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 p-4"
       @click="copyToClipboard"

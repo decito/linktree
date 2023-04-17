@@ -1,5 +1,5 @@
 <template>
-  <section class="flex w-full flex-col gap-10">
+  <section class="flex w-full flex-col gap-4">
     <img
       src="https://pbs.twimg.com/profile_images/1646649791206531073/xkCHm52T_400x400.jpg"
       class="mx-auto h-36 w-36 rounded-full"
