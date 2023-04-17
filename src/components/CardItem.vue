@@ -1,26 +1,23 @@
 <script setup lang="ts">
-import type { CardTypes } from '@/types'
+import type { CardItem } from '@/types'
+
 defineProps<{
-  cardClass: CardTypes
-  iconClass: string
-  name: string
-  username: string
-  link: string
+  item: CardItem
 }>()
 </script>
 
 <template>
   <a
-    :href="link"
+    :href="item.link"
     target="_blank"
     class="flex items-center gap-6 rounded border border-gray-500 bg-gray-700 px-6 py-4 transition-colors"
-    :class="`card-${cardClass}`"
+    :class="`card-${item.type}`"
   >
-    <i class="fa-2x" :class="iconClass"></i>
+    <i class="fa-2x" :class="item.icon"></i>
     <div>
-      <h3 class="text-lg font-semibold">{{ name }}</h3>
+      <h3 class="text-lg font-semibold">{{ item.name }}</h3>
 
-      <p>@{{ username }}</p>
+      <p>@{{ item.username }}</p>
     </div>
   </a>
 </template>
