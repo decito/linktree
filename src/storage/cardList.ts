@@ -35,5 +35,12 @@ export const items: CardItem[] = [
     type: 'youtube',
     name: 'YouTube',
     username: 'decito'
+  },
+  {
+    icon: 'fab fa-linkedin',
+    link: 'https://www.linkedin.com/in/desceoneto',
+    type: 'linkedin',
+    name: 'Linkedin',
+    username: 'desceoneto'
   }
 ]
