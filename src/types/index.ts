@@ -1,1 +1,1 @@
-export * from './cardTypes'
+export * from './card'
