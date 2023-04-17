@@ -33,3 +33,7 @@ header button {
 .card-github {
   @apply hover:border-slate-800 hover:bg-slate-950;
 }
+
+.card-youtube {
+  @apply hover:border-red-500 hover:bg-red-700;
+}
