@@ -3,7 +3,7 @@
     <a
       href="https://linkedin.com/in/desceoneto"
       target="_blank"
-      class="text-gray-400 hover:underline"
+      class="hover:underline"
     >
       <i class="fab fa-linkedin"></i>
 

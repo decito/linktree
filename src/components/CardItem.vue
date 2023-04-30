@@ -10,7 +10,7 @@ defineProps<{
   <a
     :href="item.link"
     target="_blank"
-    class="flex items-center gap-6 rounded border border-gray-500 bg-gray-700 px-6 py-4 transition-colors"
+    class="card-item flex items-center gap-6 rounded px-6 py-4 transition-colors"
     :class="`card-${item.type}`"
   >
     <i class="fa-2x" :class="item.icon"></i>

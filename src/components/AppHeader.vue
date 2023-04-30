@@ -5,7 +5,7 @@ import { copyToClipboard } from '@/helpers'
 <template>
   <header class="flex w-full items-center justify-between pb-16 pt-6">
     <button
-      class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 p-4"
+      class="flex h-16 w-16 items-center justify-center rounded-full p-4"
       @click="copyToClipboard"
     >
       <template v-if="false">
@@ -20,7 +20,7 @@ import { copyToClipboard } from '@/helpers'
     <a
       href="https://github.com/decito/linktree"
       target="_blank"
-      class="flex h-16 items-center justify-center gap-4 rounded-full bg-gray-100 p-4"
+      class="flex h-16 items-center justify-center gap-4 rounded-full p-4"
     >
       <i class="fab fa-github fa-xl"></i>
 

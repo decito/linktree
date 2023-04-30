@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-auto flex w-full flex-col gap-12 text-gray-100">
+  <main class="mx-auto flex w-full flex-col gap-12">
     <UserInfo />
 
     <CardList />
