@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: 'rgb(var(--r-primary) / <alpha-value>)',
-        secondary: 'hsl(var(--r-secondary) / <alpha-value>)',
+        secondary: 'rgb(var(--r-secondary) / <alpha-value>)',
 
         'text-light': 'rgb(var(--r-black-cozy) / <alpha-value>)',
         'text-dark': 'rgb(var(--r-white-cozy) / <alpha-value>)',
