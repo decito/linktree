@@ -1,0 +1,56 @@
+.card-twitch {
+  background: var(--color-twitch);
+
+  &:hover {
+    background: var(--color-twitch-hover);
+  }
+}
+
+.card-twitter {
+  background: var(--color-twitter);
+
+  &:hover {
+    background: var(--color-twitter-hover);
+  }
+}
+
+.card-instagram {
+  background: var(--color-instagram);
+  transition: background 1s;
+
+  &:hover {
+    background: var(--color-instagram-hover);
+  }
+}
+
+.card-github {
+  background: var(--color-github);
+
+  &:hover {
+    background: var(--color-github-hover);
+  }
+}
+
+.card-youtube {
+  background: var(--color-youtube);
+
+  &:hover {
+    background: var(--color-youtube-hover);
+  }
+}
+
+.card-linkedin {
+  background: var(--color-linkedin);
+
+  &:hover {
+    background: var(--color-linkedin-hover);
+  }
+}
+
+.card-discord {
+  background: var(--color-discord);
+
+  &:hover {
+    background: var(--color-discord-hover);
+  }
+}
