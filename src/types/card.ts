@@ -5,6 +5,7 @@ type Types =
   | 'github'
   | 'youtube'
   | 'linkedin'
+  | 'discord'
 
 export type CardItem = {
   icon: string

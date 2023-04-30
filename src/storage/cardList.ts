@@ -42,5 +42,12 @@ export const items: CardItem[] = [
     type: 'linkedin',
     name: 'Linkedin',
     username: 'desceoneto'
+  },
+  {
+    icon: 'fab fa-discord',
+    link: 'https://discord.gg/7wteSme',
+    type: 'discord',
+    name: 'Discord',
+    username: 'decito'
   }
 ]
