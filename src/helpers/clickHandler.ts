@@ -3,7 +3,7 @@ const stopFlag = ref(false)
 export const copyToClipboard = () => {
   if (stopFlag.value) return
 
-  navigator.clipboard.writeText('https://decito-links.web.app')
+  navigator.clipboard.writeText('https://decito.vercel.app/')
 
   stopFlag.value = true
 
@@ -17,8 +17,7 @@ export const copyToClipboard = () => {
 
   toggleClipboardIcon(infoIcon, 'fa-check', 'fa-link')
 
-  const progressionBar: HTMLDivElement | null =
-    document.querySelector('#progression-bar')
+  const progressionBar: HTMLDivElement | null = document.querySelector('#progression-bar')
 
   let width = 100
 

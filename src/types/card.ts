@@ -1,11 +1,4 @@
-type Types =
-  | 'twitch'
-  | 'twitter'
-  | 'instagram'
-  | 'github'
-  | 'youtube'
-  | 'linkedin'
-  | 'discord'
+type Types = 'twitch' | 'twitter' | 'instagram' | 'github' | 'youtube' | 'linkedin' | 'discord'
 
 export type CardItem = {
   icon: string
