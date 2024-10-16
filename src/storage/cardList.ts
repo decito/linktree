@@ -6,48 +6,55 @@ export const items: CardItem[] = [
     link: 'https://twitch.tv/decito',
     type: 'twitch',
     name: 'Twitch',
-    username: 'decito'
+    username: 'decito',
+    order: 4
   },
   {
-    icon: 'fab fa-twitter',
-    link: 'https://twitter.com/decito_app',
+    icon: 'fab fa-x-twitter',
+    link: 'https://twitter.com/decitodev',
     type: 'twitter',
-    name: 'Twitter',
-    username: 'decito_app'
+    name: 'X',
+    username: 'decitodev',
+    order: 6
   },
   {
     icon: 'fab fa-instagram',
-    link: 'https://instagram.com/decito_app',
+    link: 'https://instagram.com/decitodev',
     type: 'instagram',
     name: 'Instagram',
-    username: 'decito_app'
+    username: 'decitodev',
+    order: 3
   },
   {
     icon: 'fab fa-github',
     link: 'https://github.com/decito',
     type: 'github',
     name: 'Github',
-    username: 'decito'
+    username: 'decito',
+    order: 2
   },
   {
     icon: 'fab fa-youtube',
     link: 'https://www.youtube.com/c/decito',
     type: 'youtube',
     name: 'YouTube',
-    username: 'decito'
+    username: 'decito',
+    order: 5
   },
   {
     icon: 'fab fa-linkedin',
-    link: 'https://www.linkedin.com/in/desceoneto',
+    link: 'https://www.linkedin.com/in/decitodev',
     type: 'linkedin',
     name: 'Linkedin',
-    username: 'desceoneto'
+    username: 'decitodev',
+    order: 1
   },
   {
     icon: 'fab fa-discord',
     link: 'https://discord.gg/7wteSme',
     type: 'discord',
     name: 'Discord',
-    username: 'decito'
+    username: 'decito',
+    order: 7
   }
 ]

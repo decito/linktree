@@ -4,7 +4,6 @@ export const copyToClipboard = () => {
   if (stopFlag.value) return
 
   navigator.clipboard.writeText('https://decito.vercel.app/')
-
   stopFlag.value = true
 
   const infoCard = document.querySelector('#clipboard-info')
@@ -35,14 +34,12 @@ export const copyToClipboard = () => {
 
   const stopInterval = () => {
     clearInterval(interval)
-
     stopFlag.value = false
   }
 
   setTimeout(() => {
     infoCard.classList.remove('bottom-20', 'z-10')
     infoCard.classList.add('bottom-0', 'opacity-0', '-z-10')
-
     toggleClipboardIcon(infoIcon, 'fa-link', 'fa-check')
   }, 6300)
 }

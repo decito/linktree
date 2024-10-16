@@ -6,4 +6,5 @@ export type CardItem = {
   name: string
   type: Types
   username: string
+  order: number
 }

@@ -10,20 +10,16 @@ import { copyToClipboard } from '@/helpers'
     >
       <template v-if="false">
         <!-- TODO: verificar como usar o menu de contexto dos dispositivos -->
-
         <!-- <i class="fas fa-up-right-from-square"></i> -->
       </template>
-
       <i id="clipboard-icon" class="fas fa-link"></i>
     </button>
-
     <a
       href="https://github.com/decito/linktree"
       target="_blank"
       class="flex h-16 items-center justify-center gap-4 rounded-full p-4"
     >
       <i class="fab fa-github fa-xl"></i>
-
       <p class="text-xl font-semibold">Code preview</p>
     </a>
   </header>
