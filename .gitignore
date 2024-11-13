@@ -25,5 +25,5 @@ coverage
 
 # Auto generated files
 .eslintrc-auto-import.json
-auto-import.d.ts
+auto-imports.d.ts
 components.d.ts

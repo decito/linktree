@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: ['prettier', 'tailwindcss'],
   rules: {
-    'tailwindcss/no-custom-classname': ['warn'],
+    'tailwindcss/classnames-order': ['off'],
     'vue/multi-word-component-names': ['off'],
     'vue/html-self-closing': [
       'warn',
