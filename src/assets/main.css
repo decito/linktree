@@ -6,76 +6,20 @@
 
 @layer base {
   :root {
-    --r-white: 235 235 235;
-    --r-white-cozy: 248 248 248;
-    --r-white-soft: var(--r-white);
-    --r-white-mute: 245 245 245;
+    --primary: 47 129 247;
+    --secondary: 28 209 79;
 
-    --r-black: 16 16 16;
-    --r-black-cozy: 60 60 60;
-    --r-black-soft: var(--r-black);
-    --r-black-mute: 40 40 40;
-
-    --r-text-light-1: var(--r-black-cozy);
-    --r-text-light-2: var(--r-black-mute);
-
-    --r-text-dark-1: var(--r-white-cozy);
-    --r-text-dark-2: var(--r-white-mute);
-
-    --r-primary: 47 129 247;
-    --r-secondary: 28 209 79;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --button: 0 0% 90%;
+    --button-hover: 0 0% 95%;
   }
 
-  :root {
-    --color-twitch: rgb(145, 70, 255);
-    --color-twitch-hover: rgb(119, 44, 232);
-
-    --color-twitter: rgb(29, 155, 240);
-    --color-twitter-hover: rgb(26, 140, 216);
-
-    --color-instagram: linear-gradient(
-      315deg,
-      var(--color-gradient-yellow) 0%,
-      var(--color-gradient-orange) 20%,
-      var(--color-gradient-red) 40%,
-      var(--color-gradient-pink) 60%,
-      var(--color-gradient-lavender) 80%,
-      var(--color-gradient-purple) 100%
-    );
-    --color-gradient-yellow: rgb(255, 214, 0);
-    --color-gradient-orange: rgb(255, 122, 0);
-    --color-gradient-red: rgb(255, 48, 64);
-    --color-gradient-pink: rgb(255, 1, 105);
-    --color-gradient-lavender: rgb(211, 0, 197);
-    --color-gradient-purple: rgb(118, 56, 250);
-
-    --color-instagram-hover: linear-gradient(
-      315deg,
-      var(--color-gradient-yellow-hover) 0%,
-      var(--color-gradient-orange-hover) 20%,
-      var(--color-gradient-red-hover) 40%,
-      var(--color-gradient-pink-hover) 60%,
-      var(--color-gradient-lavender-hover) 80%,
-      var(--color-gradient-purple-hover) 100%
-    );
-    --color-gradient-yellow-hover: rgba(255, 214, 0, 0.8);
-    --color-gradient-orange-hover: rgba(255, 122, 0, 0.8);
-    --color-gradient-red-hover: rgba(255, 48, 64, 0.8);
-    --color-gradient-pink-hover: rgba(255, 1, 105, 0.8);
-    --color-gradient-lavender-hover: rgba(211, 0, 197, 0.8);
-    --color-gradient-purple-hover: rgba(118, 56, 250, 0.8);
-
-    --color-github: rgb(1, 4, 9);
-    --color-github-hover: rgb(72, 79, 88);
-
-    --color-youtube: rgb(255, 0, 0);
-    --color-youtube-hover: rgb(153, 4, 18);
-
-    --color-linkedin: rgb(10, 102, 194);
-    --color-linkedin-hover: rgb(0, 65, 130);
-
-    --color-discord: rgb(114, 137, 218);
-    --color-discord-hover: rgb(88, 101, 242);
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --button: 0 0% 10%;
+    --button-hover: 0 0% 15%;
   }
 }
 
@@ -87,7 +31,7 @@
   }
 
   body {
-    @apply bg-bg-light text-text-light antialiased transition-colors duration-500 dark:bg-bg-dark dark:text-text-dark;
+    @apply bg-background text-foreground antialiased transition-colors duration-500;
     font-family:
       Inter,
       -apple-system,
@@ -104,32 +48,11 @@
     text-rendering: optimizeLegibility;
   }
 
-  header a,
-  header button {
-    @apply bg-bg-btn-light text-primary transition-colors duration-300 hover:bg-bg-btn-light-hover dark:bg-bg-btn-dark dark:hover:bg-bg-btn-dark-hover;
-  }
-
-  footer {
-    @apply text-footer-light dark:text-footer-dark;
-  }
-
   #app {
-    @apply mx-auto flex max-w-3xl flex-col items-center justify-between px-8;
-  }
-
-  #clipboard-info {
-    @apply bg-bg-light text-text-light;
+    @apply mx-auto flex h-screen max-w-2xl flex-col items-center justify-between px-8;
   }
 
   #progression-bar {
-    @apply bg-primary;
-  }
-
-  #user-avatar {
-    @apply outline outline-offset-4 outline-secondary;
-  }
-
-  .card-item {
-    @apply text-text-dark;
+    @apply bg-primary transition-all duration-100;
   }
 }

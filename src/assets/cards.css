@@ -1,49 +1,19 @@
-.card-twitch {
-  background: var(--color-twitch);
-  &:hover {
-    background: var(--color-twitch-hover);
-  }
-}
+@layer base {
+  :root {
+    --color-twitch: 264 100% 64%;
 
-.card-twitter {
-  background: var(--color-twitter);
-  &:hover {
-    background: var(--color-twitter-hover);
-  }
-}
+    --color-twitter: 204 88% 53%;
 
-.card-instagram {
-  background: var(--color-instagram);
-  transition: background 1s;
-  &:hover {
-    background: var(--color-instagram-hover);
-  }
-}
+    --color-instagram-yellow: 50 100% 50%;
+    --color-instagram-red: 335 100% 50%;
+    --color-instagram-purple: 259 95% 60%;
 
-.card-github {
-  background: var(--color-github);
-  &:hover {
-    background: var(--color-github-hover);
-  }
-}
+    --color-github: 213 14% 12%;
 
-.card-youtube {
-  background: var(--color-youtube);
-  &:hover {
-    background: var(--color-youtube-hover);
-  }
-}
+    --color-youtube: 0 100% 50%;
 
-.card-linkedin {
-  background: var(--color-linkedin);
-  &:hover {
-    background: var(--color-linkedin-hover);
-  }
-}
+    --color-linkedin: 210 90% 40%;
 
-.card-discord {
-  background: var(--color-discord);
-  &:hover {
-    background: var(--color-discord-hover);
+    --color-discord: 235 86% 65%;
   }
 }
