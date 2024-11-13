@@ -23,5 +23,7 @@ coverage
 # Vercel
 .vercel
 
-# ESLint Auto Import File
+# Auto generated files
 .eslintrc-auto-import.json
+auto-import.d.ts
+components.d.ts

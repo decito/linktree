@@ -7,9 +7,31 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
-    '@vue/eslint-config-prettier'
+    '@vue/eslint-config-prettier/skip-formatting',
+    'plugin:tailwindcss/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+  plugins: ['prettier', 'tailwindcss'],
+  rules: {
+    'tailwindcss/no-custom-classname': ['warn'],
+    'vue/multi-word-component-names': ['off'],
+    'vue/html-self-closing': [
+      'warn',
+      {
+        html: { void: 'always' }
+      }
+    ]
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+      rules: {
+        'tailwindcss/no-custom-classname': ['warn', { whitelist: ['fa\\S*'] }]
+      }
+    }
+  ],
+  ignorePatterns: ['./**/ui/**/*']
 }
