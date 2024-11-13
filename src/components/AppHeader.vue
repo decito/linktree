@@ -3,7 +3,7 @@ import { copyToClipboard } from '@/helpers'
 </script>
 
 <template>
-  <header class="flex w-full items-center justify-between pb-16 pt-6">
+  <header class="flex w-full items-center justify-between pt-6">
     <button
       class="bg-button text-foreground hover:bg-button-hover flex size-12 items-center justify-center gap-4 rounded-full p-4 transition-colors duration-300"
     >

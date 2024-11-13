@@ -1,6 +1,6 @@
 <template>
-  <footer class="flex w-full justify-center gap-1 pb-6 pt-16 text-center">
-    <p>Feito com ❤️ por</p>
+  <footer class="w-full pb-6 pt-16 text-center">
+    <span>Feito com ❤️ por</span>
     <a
       href="https://linkedin.com/in/desceoneto"
       target="_blank"

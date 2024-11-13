@@ -49,7 +49,7 @@
   }
 
   #app {
-    @apply mx-auto flex h-screen max-w-2xl flex-col items-center justify-between px-8;
+    @apply mx-auto flex h-screen max-w-2xl flex-col items-center justify-between px-2 sm:px-4;
   }
 
   #progression-bar {
