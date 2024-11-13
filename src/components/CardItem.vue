@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { CardItem } from '@/types'
+import { switchUserAvatarOutlineColor } from '@/helpers'
 
 defineProps<{
   item: CardItem
@@ -10,13 +11,13 @@ defineProps<{
   <a
     :href="item.link"
     target="_blank"
-    class="card-item flex items-center gap-6 rounded px-6 py-3 transition-colors"
-    :class="`card-${item.type}`"
+    :class="`card-${item.type} bg-${item.type === 'instagram' ? 'instagram-gradient' : item.type} card-item mx-auto flex w-full max-w-2xl transform-gpu items-center gap-6 rounded-full px-8 py-2 text-white transition-transform duration-200 ease-out hover:scale-105`"
+    @mouseenter="switchUserAvatarOutlineColor(item.type)"
   >
-    <i class="fa-2x" :class="item.icon"></i>
+    <i class="fa-xl" :class="item.icon" />
     <div>
-      <h3 class="text-lg font-semibold">{{ item.name }}</h3>
-      <p>@{{ item.username }}</p>
+      <h3 class="font-semibold">{{ item.name }}</h3>
+      <p class="text-sm font-medium">@{{ item.username }}</p>
     </div>
   </a>
 </template>

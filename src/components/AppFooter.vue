@@ -1,10 +1,10 @@
 <template>
-  <footer class="w-full flex justify-center gap-1 pb-4 pt-16 text-center">
+  <footer class="flex w-full justify-center gap-1 pb-6 pt-16 text-center">
     <p>Feito com ❤️ por</p>
     <a
       href="https://linkedin.com/in/desceoneto"
       target="_blank"
-      class="hover:brightness-200 hover:underline font-semibold"
+      class="font-semibold transition-colors hover:text-red-700 hover:brightness-200"
     >
       Decito
     </a>
