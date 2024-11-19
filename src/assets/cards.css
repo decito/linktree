@@ -1,19 +1,16 @@
 @layer base {
   :root {
-    --color-twitch: 264 100% 64%;
-
-    --color-twitter: 204 88% 53%;
-
-    --color-instagram-yellow: 50 100% 50%;
-    --color-instagram-red: 335 100% 50%;
-    --color-instagram-purple: 259 95% 60%;
-
-    --color-github: 213 14% 12%;
-
-    --color-youtube: 0 100% 50%;
-
-    --color-linkedin: 210 90% 40%;
-
     --color-discord: 235 86% 65%;
+    --color-facebook: 220 46% 48%;
+    --color-github: 213 14% 12%;
+    --color-instagram-purple: 259 95% 60%;
+    --color-instagram-red: 335 100% 50%;
+    --color-instagram-yellow: 50 100% 50%;
+    --color-linkedin: 210 90% 40%;
+    --color-twitch: 264 100% 64%;
+    --color-twitter: 210 13% 9%;
+    --color-twitter-blue: 204 88% 53%;
+    --color-whatsapp: 142 70% 49%;
+    --color-youtube: 0 100% 50%;
   }
 }

@@ -12,7 +12,7 @@ export const items: CardItem[] = [
   {
     icon: 'fab fa-x-twitter',
     link: 'https://twitter.com/decitodev',
-    type: 'twitter',
+    type: 'twitter-blue',
     name: 'X',
     username: 'decitodev',
     order: 6

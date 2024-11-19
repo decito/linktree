@@ -1,6 +1,11 @@
+<script setup lang="ts">
+import UserInfo from '@/components/UserInfo.vue'
+import CardList from '@/components/CardList.vue'
+</script>
+
 <template>
-  <main class="mx-auto flex w-full grow flex-col gap-12">
+  <div class="mx-auto flex w-full grow flex-col gap-12">
     <UserInfo />
     <CardList />
-  </main>
+  </div>
 </template>

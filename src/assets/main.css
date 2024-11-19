@@ -8,13 +8,11 @@
   :root {
     --primary: 47 129 247;
     --secondary: 28 209 79;
-
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --button: 0 0% 90%;
     --button-hover: 0 0% 95%;
   }
-
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
@@ -46,10 +44,6 @@
       'Helvetica Neue',
       sans-serif;
     text-rendering: optimizeLegibility;
-  }
-
-  #app {
-    @apply mx-auto flex h-screen max-w-2xl flex-col items-center justify-between px-2 sm:px-4;
   }
 
   #progression-bar {
