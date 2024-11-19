@@ -2,9 +2,7 @@
 import type { CardItem } from '@/types'
 import { switchUserAvatarOutlineColor } from '@/helpers'
 
-defineProps<{
-  item: CardItem
-}>()
+defineProps<{ item: CardItem }>()
 </script>
 
 <template>
