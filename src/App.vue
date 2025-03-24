@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import { useColorMode } from '@vueuse/core'
+import { Analytics } from '@vercel/analytics/react'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import InfoDiv from './components/InfoDiv.vue'
@@ -15,5 +16,6 @@ mode.value = 'dark'
     <RouterView />
     <AppFooter />
     <InfoDiv />
+    <Analytics />
   </main>
 </template>
