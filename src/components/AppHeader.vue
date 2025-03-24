@@ -11,7 +11,7 @@ const open = ref(false)
       type="button"
       class="flex size-12 items-center justify-center gap-4 rounded-full bg-button p-4 text-foreground transition-colors duration-300 hover:bg-button-hover"
     >
-      <a href="https://github.com/decito/linktree" target="_blank">
+      <a href="https://github.com/decito/linkhub" target="_blank">
         <i class="fab fa-github fa-xl" />
       </a>
     </button>

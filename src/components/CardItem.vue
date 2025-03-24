@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { CardItem } from '@/types'
 import { switchUserAvatarOutlineColor } from '@/helpers'
+import type { CardItem } from '@/types'
 
 defineProps<{ item: CardItem }>()
 </script>
