@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { inject } from '@vercel/analytics'
 import { useColorMode } from '@vueuse/core'
-import { Analytics } from '@vercel/analytics/react'
-import AppHeader from './components/AppHeader.vue'
+import { RouterView } from 'vue-router'
 import AppFooter from './components/AppFooter.vue'
+import AppHeader from './components/AppHeader.vue'
 import InfoDiv from './components/InfoDiv.vue'
+
+const dev = import.meta.env.DEV
+console.log('dev', dev)
 
 const mode = useColorMode()
 mode.value = 'dark'
+inject({ mode: dev ? 'development' : 'production' })
 </script>
 
 <template>
@@ -16,6 +20,5 @@ mode.value = 'dark'
     <RouterView />
     <AppFooter />
     <InfoDiv />
-    <Analytics />
   </main>
 </template>
