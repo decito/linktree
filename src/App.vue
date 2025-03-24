@@ -6,11 +6,10 @@ import AppFooter from './components/AppFooter.vue'
 import AppHeader from './components/AppHeader.vue'
 import InfoDiv from './components/InfoDiv.vue'
 
-const dev = import.meta.env.DEV
-console.log('dev', dev)
-
 const mode = useColorMode()
 mode.value = 'dark'
+
+const dev = import.meta.env.DEV
 inject({ mode: dev ? 'development' : 'production' })
 </script>
 
